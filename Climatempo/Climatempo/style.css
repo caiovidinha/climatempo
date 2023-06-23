@@ -1,0 +1,176 @@
+*{
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto';
+    background: rgb(57,5,119);
+    background: linear-gradient(141deg, rgba(57,5,119,1) 0%, rgba(147,35,171,1) 78%, rgba(188,0,255,1) 100%);
+    }
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 12px;
+    height: 130px;
+    width: 500px;
+    padding: 30px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.search-bar{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search-bar input{
+    color: rgb(51, 54, 58);
+    width: 80%;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 30px;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.search-bar input::placeholder{
+    color: rgba(196, 206, 224,0.5);
+}
+
+.search-bar button {
+    color: #3D0679;
+    background-color: rgba(196, 206, 224,0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.search-bar button:hover {
+    cursor: pointer;
+    color: rgba(196, 206, 224,0.2);
+    background-color: #3D0679;
+    transition: 0.4s ease;
+}
+
+.clima{
+    text-align: center;
+}
+
+.clima img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.clima .temperatura{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.clima .temperatura span {
+    position: absolute;
+
+}
+
+.clima .descricao{
+    font-size: 22px; 
+}
+
+.detalhes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.detalhes .umidade, .detalhes .vento {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.detalhes .umidade{
+    color: rgba(196, 206, 224,0.7);
+    padding-left: 20px ;
+    justify-content: flex-start;
+}
+
+.detalhes .vento{
+    color: rgba(196, 206, 224,0.7);
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.detalhes i{
+    color: rgba(196, 206, 224,0.7);
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.detalhes span{
+
+}
+
+.detalhes p{
+
+}
+
+.erro-local{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.erro-local img {
+    width: 70%;
+}
+
+.erro-local p {
+    color: rgba(196, 206, 224,0.7);
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.clima, .detalhes {
+    scale: 0;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s ;
+}
+
+@keyframes  fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
