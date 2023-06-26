@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaTempo</title>
+    <script src="https://kit.fontawesome.com/3b4cbac4e0.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Insira sua cidade...">
+            <button class="fa-solid fa-magnifying-glass-location fa-xl"><i class="fa-solid fa-magnifying-glass-location fa-sm hide-desk"></i></button>
+        </div>
+
+        <div class="erro-local">
+            <img src="img/404.png">
+            <p>Localização inválida :(</p>
+        </div>
+
+        <div class="clima">
+            <img src="">
+            <p class="temperatura"></p>
+        </div>
+
+        <div class="detalhes">
+            <div class="umidade">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Umidade</p>
+                </div>
+            </div>
+            <div class="vento">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Velocidade do vento</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
