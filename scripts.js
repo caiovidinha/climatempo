@@ -21,7 +21,7 @@ search.addEventListener('click', () => {
         container.style.height = '130px';
         return
     }
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + APIkey)
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + APIkey)
     .then(response => response.json())
     .then((data) => {
         if(data.length === 0){
